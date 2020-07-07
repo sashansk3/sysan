@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link type="text/css" rel="stylesheet" href="/index.css">
+  </head>
+  <body>
+    <div class="MainWindow mx-auto rounded w-25 bg-light mt-5 p-2 border border-info">
+      <p class="text-center" style="font-size: large;">Войти как:</p>
+      <button class="btn btn-info btn-lg btn-block" id="expert" onClick=window.location='/expertChoice'> Эксперт </button>
+      <button id="analyst" class="btn btn-info btn-lg btn-block"> Аналитик </button>
+    </div>
+
+    <div id="FormBack">
+      <div id="SpecialistForm">
+        <button type="button" class="close mb-2" aria-label="Close"> <span id="ClosePopup" aria-hidden="true">&#10008;</span> </button><br>
+        Логин: <input type="text" id='login' class="form-control form-control-sm border border-info"/>
+        Пароль: <input type="text" id='password' class="form-control form-control-sm border border-info"/><br>
+        <button id="submit" class="btn btn-info btn-lg btn-block mx-auto btn-sm">Авторизоваться</button>
+      </div>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+    $(function() {
+      $("#SpecialistForm").hide()
+      $("#FormBack").hide()
+      $("#analyst").click(() => {
+        $("#FormBack").show()
+        $("#SpecialistForm").show()
+      })
+      $("#ClosePopup").click(() => {
+        $("#FormBack").hide()
+        $("#SpecialistForm").hide()
+      })
+      
+      $("#submit").click(()=>{
+        let 
+          login = $("#login").val(),
+          password = $("#password").val();
+        if(login == "admin" && password == "admin"){
+          window.location.href = '/analystChoise'
+        }
+        else
+          alert("Неверно введённые данные")
+      })
+    })
+  </script>
+</html>

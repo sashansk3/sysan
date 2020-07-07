@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/expertChoise.css">
+  </head>
+  <body>
+    <nav class="navbar justify-content-end navbar-light bg-light">
+      <button class="btn btn-outline-info btn-sm" onClick=window.location='/'> Завершить сеанс работы </button>
+    </nav>
+    <div class="MainWindow mx-auto rounded w-25 bg-light mt-5 px-2 pt-2  border border-info"> </div>
+    <div id="FormBack">
+      <div id="SpecialistForm">
+        <button type="button" class="close mb-2" aria-label="Close"> <span id="ClosePopup" aria-hidden="true">&#10008;</span> </button><br>
+        Логин: <input type="text" id='login' class="form-control form-control-sm border border-info"/>
+        Пароль: <input type="text" id='password' class="form-control form-control-sm border border-info"/><br>
+        <button id="submit" class="btn btn-info btn-lg btn-block mx-auto btn-sm">Авторизоваться</button>
+      </div>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="expertChoice.js"></script>
+</html>

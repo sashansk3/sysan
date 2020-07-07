@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" href="experts.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <button class="btn btn-outline-info btn-sm" onClick=window.location='/analystChoise'> На главную </button>
+      <button class="btn btn-outline-info btn-sm" onClick=window.location='/'> Завершить сеанс работы </button>
+    </nav>
+    <div>
+      <table class="table" id="Experts">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">Фамилия</th>
+            <th scope="col">Имя</th>
+            <th scope="col">Отчество</th>
+            <th scope="col">Работа</th>
+            <th scope="col">Проблемы</th>
+            <th scope="col">Редактировать</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+    <button id="showSpecialistForm" class="btn btn-info btn-lg btn-sm ml-2"> Добавить эксперта </button>
+    <div id="FormBack">
+      <div id="SpecialistForm">
+        <button type="button" class="close mb-2" aria-label="Close"> <span id="ClosePopup" aria-hidden="true">&#10008;</span> </button>
+        <table class="table table-sm">
+          <tr>
+            <td class="border-0">Фамилия</td>
+            <td class="border-0">
+            <input id="surname" class="form-control form-control-sm border border-info" type="text" /> </td>
+          </tr>
+          <tr>
+            <td class="border-0">Имя</td>
+            <td class="border-0">
+            <input id="name" class="form-control form-control-sm border border-info" type="text" /> </td>
+          </tr>
+          <tr>
+            <td class="border-0">Отчество</td>
+            <td class="border-0">
+            <input id="patronymic" class="form-control form-control-sm border border-info" type="text" /> </td>
+          </tr>
+          <tr>
+            <td class="border-0">Должность</td>
+            <td class="border-0">
+            <input id="job" class="form-control form-control-sm border border-info" type="text" /> </td>
+          </tr>
+          <tr>
+            <td class="border-0">Логин</td>
+            <td class="border-0">
+              <input id="login" class="form-control form-control-sm border border-info" type="text" />
+            </td>
+          </tr>
+          <tr>
+            <td class="border-0">Пароль</td>
+            <td class="border-0">
+              <input id="password" class="form-control form-control-sm border border-info" type="text" />
+            </td>
+          </tr>
+        </table>
+        <div id="button"></div>
+      </div>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="experts.js"></script>
+  <script src="/check.js"></script>
+</html>

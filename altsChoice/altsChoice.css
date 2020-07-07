@@ -1,0 +1,47 @@
+.alternativesMetod1 {
+    display: flex;
+    margin: 0.5%;
+}
+
+.alternativesItem1 {
+    border-radius: 5px;
+    padding: 5px;
+    float: left; /* Обтекание справа */
+    margin-right: 5%;
+    margin-left: 3%;
+    word-wrap: break-word;
+    width: 45%;
+}
+
+.alternativesItem2 {
+    border-radius: 5px;
+    padding: 5px;
+    float: right;
+    width: 45%;
+    word-wrap: break-word;
+}
+
+.alternativesItems {
+    border-radius: 5px;
+    padding: 5px;
+    float: left; /* Обтекание справа */
+    margin-right: 5%;
+    margin-left: 3%;
+    word-wrap: break-word;
+}
+
+.Res{
+    display: flex;
+    justify-content: space-around;
+}
+
+input[type=range] {
+    width: 40%;
+    margin: 0.5%;
+}
+input[type=range]:focus {
+    outline: none;
+}
+option{
+   color: black;
+}
